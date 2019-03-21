@@ -1,0 +1,27 @@
+apply plugin: 'com.renard.comswitch'
+apply from: rootProject.file('libbase.gradle')
+
+kapt {
+    arguments {
+        arg("moduleName", project.getName())
+    }
+}
+
+android {
+
+    //规定资源命名前缀为music_
+    resourcePrefix "music_"
+}
+
+dependencies {
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+//    implementation project(':Provider')
+    kapt "com.google.dagger:dagger-compiler:$dagger_version"
+    compile project(path: ':Common')
+//    implementation project(':nicevideoplayer')
+}
+
+combuild {
+    applicationName = 'com.renard.music.app.MusicApplication'
+    isRegisterAuto = false
+}
