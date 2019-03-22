@@ -1,1 +1,1 @@
-include ':app', ':Music', ':PluginSwitch', ':Common'
+include ':app', ':Music', ':PluginSwitch', ':Common', ':Provider', ':ijkplayer'

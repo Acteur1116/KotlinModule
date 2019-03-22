@@ -11,7 +11,9 @@
             <option value="$PROJECT_DIR$/Common" />
             <option value="$PROJECT_DIR$/Music" />
             <option value="$PROJECT_DIR$/PluginSwitch" />
+            <option value="$PROJECT_DIR$/Provider" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/ijkplayer" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
