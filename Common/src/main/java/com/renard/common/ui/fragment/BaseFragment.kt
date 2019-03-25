@@ -44,6 +44,10 @@ abstract class BaseFragment : Fragment() {
         initData()
         setListener()
     }
+    /**
+     * 设置布局id
+     */
+    abstract fun getLayoutId(): Int
 
     abstract fun initView()
 
@@ -57,11 +61,6 @@ abstract class BaseFragment : Fragment() {
     open fun initOperate() {
 
     }
-
-    /**
-     * 设置布局id
-     */
-    abstract fun getLayoutId(): Int
 
     override fun onResume() {
         super.onResume()
